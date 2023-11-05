@@ -1,0 +1,33 @@
+.PPBanner{
+    margin: 10px 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+                       rgba(0, 0, 0, 0.4)), url("../../images/test.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 10px;
+    color: #fff;
+    padding: 40px 100px;
+}
+.banner-text{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    min-width: 300px;
+}
+.banner-text h2{
+    font-weight: bold;
+    font-size: 54px;
+}
+@media (max-width:591px) {
+    .PPBanner{
+        padding: 30px 4vw;
+    }
+    .banner-text{
+        padding: 10px;
+        word-wrap: break-word;
+        text-align: left;
+        width: 80vw;
+        height: auto;
+    }
+}

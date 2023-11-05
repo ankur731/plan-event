@@ -1,0 +1,19 @@
+.CategoryBanner{
+    margin: 10px 15px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)), url("../../images/categoryBanner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    height: 300px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CategoryBanner h1{
+    text-align: center;
+    margin: auto;
+    font-size: 54px;
+    font-weight:bold;
+    color: #f2f2f2;
+}

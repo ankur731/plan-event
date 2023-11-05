@@ -1,0 +1,54 @@
+.popularCategoryCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #111;
+    width: 120px;
+    height: 120px;
+    margin: 15px;
+    min-width: 120px;
+    border-radius: 5px;
+    padding-top: 10px;
+    overflow-x: hidden;
+    transition: all 0.3s;
+    
+}
+.popularCategoryCard:hover>.icon{
+    color: #ed4765;
+    background-color: #fff;
+}
+.popularCategoryCard:hover{
+    cursor: pointer;
+    border-color: #ed4765;
+    background-color: #ffffff;
+color: #ed4765;
+}
+.popularCategoryCard .icon{
+    font-size: 400%;
+    transition: all 0.3s;
+}
+.popularCategoryCard p{
+    font-size: 14px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+@media (max-width:867px){
+    .popularCategoryCard{
+        margin: 15px 5vw;
+    }
+}
+@media (max-width:400px) {
+    .popularCategoryCard{
+        width: 100px;
+        height: 90px;
+        margin: 7px;
+    }
+    .popularCategoryCard .icon{
+        font-size: 250%;
+    }
+    .popularCategoryCard p{
+        font-size: 12px;
+        margin-top: 0px;
+    }
+}

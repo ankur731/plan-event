@@ -1,0 +1,35 @@
+.cpCategorySection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 5vw;
+}
+.pagination {
+    margin-bottom: 50px;
+}
+
+.pagination .page-item a{
+    color: #ed4765;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: #ed4765 !Important;
+    border: solid 1px #ed4765 !Important;
+}
+
+@media (max-width:1253px) {
+    .cpCategorySection{
+        justify-content: space-around;
+    }
+    
+}
+@media (max-width:591px) {
+    .cpCategorySection{
+        justify-content: center;
+        padding: 40px 2vw;
+    }
+    
+}

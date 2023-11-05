@@ -1,0 +1,70 @@
+.vendorRegistration{
+    padding: 40px 50px;
+    margin: 15px 30px 25px 30px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+}
+.vendorRegistration hr{
+    width: 10%;
+}
+.vendorRegistration form h2{
+    margin: 20px 0;
+}
+.firstForm, .secondForm{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.firstForm .inputBox, .secondForm .inputBox{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 10px 0;
+}
+
+.firstForm .inputBox label{
+   /* width: fit-content; */
+   font-size: 14px;
+}
+.firstForm .inputBox input, .secondForm .inputBox input, textarea{
+   padding: 5px 10px;
+   border: 1px solid grey;
+   border-radius: 5px;
+   outline: none;
+   height: 38px;
+}
+textarea{
+    height: auto;
+}
+
+.secondForm .inputBox #startingPrice, #maximumPrice{
+    width: 100px;
+}
+.secondForm .inputBox .fileInput{
+    width: fit-content;
+    border: none;
+    outline: none;
+}
+.secondForm  .videoInput{
+    width: 100%;
+}
+form .bottomSubmitBar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+form .vendorSubmit{
+    padding: 8px 30px;
+    font-size: 20px;
+    align-self: flex-end;
+    align-items: flex-end;
+    width: 350px;
+    border-radius: 3px;
+    
+    margin: 20px 0;
+    border: none;
+    background-color: #418b3c;
+    color: #fff;
+}

@@ -1,0 +1,167 @@
+.banner{
+    /* width: 100vw; */
+    background-image: url("../../images/pexels-czapp-árpád-16945241.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 60px 40px 120px 40px;
+    color: #fff;
+    
+}
+.banner h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 52px;
+}
+.banner p{
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 30px;
+}
+.banner .landingPage-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+}
+.banner .landingPage-form input{
+    padding: 20px;
+    margin: 1px 5px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+}
+.banner .landingPage-form #what{
+    width: 250px;
+}
+.banner .landingPage-form input::placeholder{
+    font-weight: 18px;
+    font-weight: 600;
+    color: #282828;
+}
+.banner .landingPage-form input:focus{
+    outline: none;
+}
+
+.banner form button{
+    background-color: #ED4765 !important;
+    color: #fff;
+    border: none;
+    padding: 16px 35px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+@media (max-width:867px) {
+    .banner .landingPage-form{
+        flex-direction: column;
+        width: 85%;
+       
+    }
+    .banner .landingPage-form input{
+        margin: 10px 5px;
+        width: 90%;
+    }
+    .banner .landingPage-form #what{
+        width: 90%;
+    }
+    .banner form button{
+        margin-top: 10px;
+    }
+}
+@media (max-width:480px){
+    .banner h1{
+        font-size: 45px;
+    }
+    .banner .landingPage-form input{
+        margin: 10px 5px;
+        width: 100%;
+        padding: 15px 20px;
+
+    }
+    .banner .landingPage-form #what{
+        width: 98%;
+    }
+    .banner form button{
+        padding: 14px 27px;
+        font-size: 18px;
+    }
+}
+
+
+#blackout {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0.8);
+    transition: z-index 500ms, visibility 800ms, opacity 1000ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+#blackout.visable {
+    opacity: 1;
+    z-index: 8;
+    display: block;
+    visibility: visible;
+}
+#popup {
+    /* opacity: 0; */
+    /* top: -220%; */
+    /* left: 10%; */
+    width: 95vw;
+    height: 75vh;
+    /* padding: 15px; */
+    position: fixed;
+    border-radius: 5px;
+    /* margin: 0% 0 0 50%; */
+    background: rgb(248, 248, 248);
+    transition: top 550ms, opacity 500ms, z-index 500ms;
+    display: none;
+    overflow: visible;
+    overflow-y: hidden;
+}
+
+
+#popup.visable {
+    top: 2%;
+    display: block;
+    /* opacity: 1; */
+    z-index: 9;
+    /* position: /; */
+    
+}
+.closebutton{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+}
+.closebutton:hover{
+    cursor: pointer;
+}
+
+.carousel-img{
+    width: 100%;
+    height: 100%;
+}
+.carousel .carousel-item {
+    height: 95vh;
+  }
+  
+  .carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 95vh;
+}
+

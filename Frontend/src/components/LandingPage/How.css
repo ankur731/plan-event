@@ -1,0 +1,81 @@
+
+*{
+    font-family: sans-serif;
+}
+.how{
+    text-align: center;
+    margin-top: 80px;
+}
+.how .iconSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4vw 5vw;
+    flex-wrap: wrap;
+}
+.how .iconSection .iconSection-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+}
+.how .iconSection .iconSection-row .iconDiv{
+    width: fit-content;
+    border: 1px solid #111;
+    padding: 25px;
+    border-radius: 50%;
+}
+.how .iconSection .iconSection-row .icon{
+    font-size: 280%;
+    color: #111;
+    transition: all 0.3s;
+}
+.how .iconSection .iconSection-row .iconDiv:hover{
+    border: 1px solid #ED4765;
+    cursor: pointer;
+}
+.how .iconSection .iconSection-row .iconDiv:hover>.icon{
+    color: #ED4765;
+}
+.how .iconSection .iconSection-row h4{
+    margin: 10px 0;
+    font-weight: bold;
+}
+@media (max-width:1333px) {
+    .how .iconSection .iconSection-row{
+        width: 280px;
+    }
+}
+@media (max-width:980px) {
+    .how .iconSection {
+        padding: 4vw 3vw;
+        align-items: flex-start;
+            /* flex-direction: column; */
+    }
+    .how .iconSection .iconSection-row{
+        width: 200px;
+    }
+}
+@media (max-width:680px) {
+    .how{
+        padding: 0 20px;
+    }
+    .how .iconSection {
+            flex-direction: column;
+            align-items: center;
+    }
+    .how .iconSection .iconSection-row{
+        width: 400px;
+        margin: 15px 0;
+    }
+}
+@media (max-width:480px) {
+    .how{
+        padding: 0 15px;
+    }
+    .how .iconSection .iconSection-row{
+        width: 320px;
+        padding: 0 20px;
+    }
+}

@@ -1,0 +1,54 @@
+.filterBar{
+    padding: 20px 7vw;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    position: relative;
+    overflow: visible;
+}
+.filterBar .filterMenu button, .sortMenu button{
+    padding: 5px 25px;
+    border-radius: 5px;
+
+    font-size: 18px;
+    border: 1px solid rgb(82, 82, 82);
+    color: #323232;
+    position: relative;
+}
+.filterBar .filterMenu .filterDropdown{
+    position: absolute;
+    border: 1px solid #111;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin: 5px 0;
+    /* display: none; */
+}
+.filterBar .filterMenu .filterDropdown input {
+    height: 35px;
+    padding: 5px 10px;
+    margin: 2px 5px;
+}
+.filterBar .filterMenu .filterDropdown button {
+    padding: 4px 21px;
+    background-color: #ed4765;
+    color: #fff;
+    border: none;
+}
+
+.productCardsSection{
+    margin-top: 20px;
+    padding: 20px 7vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media (max-width:907px) {
+    .productCardsSection{
+        justify-content: space-around;
+    }
+}
+@media (max-width:605px) {
+    .productCardsSection{
+        justify-content: center;
+    }
+}

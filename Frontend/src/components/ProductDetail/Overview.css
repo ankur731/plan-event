@@ -1,0 +1,35 @@
+.overview{
+    width: 95Vw;
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 30px 40px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.overview h3{
+    font-size: 22px;
+}
+.overview p{
+    font-size: 15px;
+    color: #494949;
+}
+@media (max-width:620px) {
+    .overview{
+        width: 90vw;
+    }
+    .overview h3{
+        font-size: 19px;
+    }
+    .overview p{
+        font-size: 14px;
+    }
+}
+@media (max-width:450px) {
+    .overview h3{
+        font-size: 17px;
+    }
+    .overview p{
+        font-size: 13px;
+    }
+}

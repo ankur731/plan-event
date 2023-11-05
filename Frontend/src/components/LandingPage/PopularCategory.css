@@ -1,0 +1,28 @@
+
+.popularCategory{
+    padding: 80px 40px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.popularCategory h3{
+    font-size: 17px;
+    color: #464646;
+}
+.popularCategory-section{
+    
+    /* margin: auto; */
+    /* width: 75vw; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+@media (max-width:980px) {
+    .popularCategory-section{
+        justify-content: center;
+    }
+}
